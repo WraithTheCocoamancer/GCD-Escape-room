@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.37311912, g: 0.3807398, b: 0.3587272, a: 1}
+  m_IndirectSpecularColor: {r: 0.37311953, g: 0.38074014, b: 0.3587274, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -197,7 +197,7 @@ GameObject:
   - component: {fileID: 279081824}
   - component: {fileID: 279081825}
   m_Layer: 0
-  m_Name: Point Light
+  m_Name: Torch
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1066,14 +1066,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 1415875280}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c74948108423e05488f9ba4095c44b83, type: 3}
+  m_Script: {fileID: 11500000, guid: 11c415b683a45b94bbb9d1a813f62b19, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rayLength: 10
-  LayerMaskInteract:
-    serializedVersion: 2
-    m_Bits: 256
-  uiCrosshair: {fileID: 1184914192}
 --- !u!1 &1531556914
 GameObject:
   m_ObjectHideFlags: 0
@@ -1288,6 +1283,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 8
       objectReference: {fileID: 0}
+    - target: {fileID: 2502203975881118265, guid: 3a15d5db00de1314db95a523c7d14523,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: -4968143338141861873, guid: 3a15d5db00de1314db95a523c7d14523,
         type: 3}
       propertyPath: m_Layer
@@ -1362,11 +1362,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 0.0060580242
-      objectReference: {fileID: 0}
-    - target: {fileID: 2502203975881118265, guid: 3a15d5db00de1314db95a523c7d14523,
-        type: 3}
-      propertyPath: m_Layer
-      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3a15d5db00de1314db95a523c7d14523, type: 3}
@@ -1630,7 +1625,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: b9ff4e7820f60f147822d71a127f9651, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
