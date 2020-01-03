@@ -70,8 +70,17 @@
     <Compile Include="Assets\SampleScenes\Scripts\ParticleSceneControls.cs" />
     <Compile Include="Assets\SampleScenes\Scripts\PlaceTargetWithMouse.cs" />
     <Compile Include="Assets\SampleScenes\Scripts\SlowMoButton.cs" />
+    <Compile Include="Assets\Scripts\Clockinteract.cs" />
     <Compile Include="Assets\Scripts\Flashlight.cs" />
+    <Compile Include="Assets\Scripts\GemInteract.cs" />
+    <Compile Include="Assets\Scripts\Headinteract.cs" />
+    <Compile Include="Assets\Scripts\Inventory.cs" />
+    <Compile Include="Assets\Scripts\KeyInteract.cs" />
+    <Compile Include="Assets\Scripts\LockInteract.cs" />
+    <Compile Include="Assets\Scripts\Map.cs" />
+    <Compile Include="Assets\Scripts\MapInteract.cs" />
     <Compile Include="Assets\Scripts\PillarAnimation.cs" />
+    <Compile Include="Assets\Scripts\PillarInteract.cs" />
     <Compile Include="Assets\Scripts\RaycastFPS.cs" />
     <None Include="Assets\SampleScenes\Shaders\Skybox-Procedural.shader" />
     <Reference Include="Unity.Timeline.Editor">

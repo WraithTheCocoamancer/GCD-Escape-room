@@ -10,7 +10,6 @@ public class RaycastFPS : MonoBehaviour
 
     [SerializeField] private int rayLength = 10;
     [SerializeField] private LayerMask LayerMaskInteract; 
-
     [SerializeField] private Image uiCrosshair;
 
     private void Update()
@@ -27,7 +26,8 @@ public class RaycastFPS : MonoBehaviour
                 if (Input.GetKeyDown(KeyCode.E))
                 {
                     Debug.Log("I have interacted with an object");
-                    raycastedObject.SetActive(false);
+                    hit.transform.gameObject.SendMessage("ReactToRaycast");
+
                 }
             }
         }
