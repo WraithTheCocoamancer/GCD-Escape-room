@@ -8,6 +8,7 @@ public class Inventory : MonoBehaviour
     public bool GemGot = false;
     public bool KeyGot = false;
     public bool LockGone = false;
+    public bool MapHave = false;
     void Start()
     {
         
@@ -25,5 +26,9 @@ public class Inventory : MonoBehaviour
     void KeyPickup()
     {
         KeyGot = true;
+    }
+    void MapPickup()
+    {
+        MapHave = true;
     }
 }

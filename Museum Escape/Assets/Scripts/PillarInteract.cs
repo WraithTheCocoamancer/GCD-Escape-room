@@ -28,8 +28,7 @@ public class PillarInteract : MonoBehaviour
     {
         LockGone = Inv.GetComponent<Inventory>().LockGone;
         if (LockGone == true)
-        {
-            
+        { 
             anim.Play("PillarTurn");
             
         }
