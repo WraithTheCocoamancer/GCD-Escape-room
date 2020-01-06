@@ -25,4 +25,5 @@ public class KeyInteract : MonoBehaviour
         Key.SetActive(false);
         Inventory.SendMessage("KeyPickup");
     }
+
 }
