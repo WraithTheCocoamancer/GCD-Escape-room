@@ -12,6 +12,7 @@ public class Button1Interact : MonoBehaviour
     private bool Button4 = false;
     private bool Button5 = false;
     private bool Button6 = false;
+    private bool Button7 = false;
     private GameObject FirstButton;
     void Start()
     {
@@ -32,7 +33,8 @@ public class Button1Interact : MonoBehaviour
         Button4 = ButtTrack.GetComponent<ButtonTracking>().Button4;
         Button5 = ButtTrack.GetComponent<ButtonTracking>().Button5;
         Button6 = ButtTrack.GetComponent<ButtonTracking>().Button6;
-        if (Button1 == false && Button2 == false && Button3 == false && Button4 == false && Button5 == false && Button6 == false)
+        Button7 = ButtTrack.GetComponent<ButtonTracking>().Button7;
+        if (Button1 == false && Button2 == false && Button3 == false && Button4 == false && Button5 == false && Button6 == false && Button7 == false)
         {
             ButtTrack.GetComponent<ButtonTracking>().Button1 = true;
         }
@@ -44,6 +46,7 @@ public class Button1Interact : MonoBehaviour
             ButtTrack.GetComponent<ButtonTracking>().Button4 = false;
             ButtTrack.GetComponent<ButtonTracking>().Button5 = false;
             ButtTrack.GetComponent<ButtonTracking>().Button6 = false;
+            ButtTrack.GetComponent<ButtonTracking>().Button7 = false;
         }
     }
 }

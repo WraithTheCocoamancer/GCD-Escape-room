@@ -11,6 +11,7 @@ public class ButtonTracking : MonoBehaviour
     public bool Button4 = false;
     public bool Button5 = false;
     public bool Button6 = false;
+    public bool Button7 = false;
     void Start()
     {
         
