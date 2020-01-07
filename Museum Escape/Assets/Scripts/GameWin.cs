@@ -7,6 +7,9 @@ public class GameWin : MonoBehaviour
     // Start is called before the first frame update
     public Collider WinBox;
     public GameObject WinScreen;
+    public GameObject Camera;
+    public GameObject Player;
+
     void Start()
     {
 
@@ -20,6 +23,11 @@ public class GameWin : MonoBehaviour
 
     void Win()
     {
-        
+
+    }
+    private void OnTriggerEnter(Collider WinBox)
+    {
+        Player.SetActive(false);
+        WinScreen.SetActive(true);
     }
 }

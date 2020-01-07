@@ -6,7 +6,6 @@ public class Clockinteract : MonoBehaviour
 {
     // Start is called before the first frame update
     private GameObject Inv;
-    private bool HaveKey = false;
     private GameObject Door;
     private Animator anim;
     void Start()
