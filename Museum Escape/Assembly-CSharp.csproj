@@ -71,8 +71,15 @@
     <Compile Include="Assets\SampleScenes\Scripts\PlaceTargetWithMouse.cs" />
     <Compile Include="Assets\SampleScenes\Scripts\SlowMoButton.cs" />
     <Compile Include="Assets\Scripts\Button1Interact.cs" />
+    <Compile Include="Assets\Scripts\Button2Interact.cs" />
+    <Compile Include="Assets\Scripts\Button3Interact.cs" />
+    <Compile Include="Assets\Scripts\Button4Interact.cs" />
+    <Compile Include="Assets\Scripts\Button5Interact.cs" />
+    <Compile Include="Assets\Scripts\Button6interact.cs" />
+    <Compile Include="Assets\Scripts\Button7interact.cs" />
     <Compile Include="Assets\Scripts\ButtonTracking.cs" />
     <Compile Include="Assets\Scripts\Clockinteract.cs" />
+    <Compile Include="Assets\Scripts\DeedInteract.cs" />
     <Compile Include="Assets\Scripts\Flashlight.cs" />
     <Compile Include="Assets\Scripts\GemInteract.cs" />
     <Compile Include="Assets\Scripts\Headinteract.cs" />

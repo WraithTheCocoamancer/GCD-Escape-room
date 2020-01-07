@@ -9,6 +9,8 @@ public class Inventory : MonoBehaviour
     public bool KeyGot = false;
     public bool LockGone = false;
     public bool MapHave = false;
+    public bool ButtonsPressed = false;
+    public bool DeedHave = true;
     void Start()
     {
         
