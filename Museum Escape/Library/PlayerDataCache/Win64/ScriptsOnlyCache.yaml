@@ -13,8 +13,9 @@ ScriptsOnlyBuild:
     - ButtonTracking
     - Clockinteract
     - DeedInteract
+    - DoubleDoorInteract
     - Flashlight
-    - GameManager
+    - GameWin
     - GemInteract
     - Headinteract
     - Inventory
@@ -22,20 +23,19 @@ ScriptsOnlyBuild:
     - LockInteract
     - Map
     - MapInteract
+    - OpeningLetter
     - PillarAnimation
     - PillarInteract
     - RaycastFPS
+    - StartButton
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
-    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
     - UnityEditor.Graphs.AnimationStateMachine.Graph
     - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
-    - UnityEditor.Graphs.AnimationStateMachine.StateNode
     - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
-    - UnityEditor.TestTools.TestRunner.TestListCacheData
     UnityEngine.UI.dll:
     - UnityEngine.EventSystems.EventSystem
     - UnityEngine.EventSystems.StandaloneInputModule
@@ -45,76 +45,6 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.Image
     - UnityEngine.UI.Text
   sceneClasses:
-    Assets/Scenes/GameEnd.unity:
-    - Class: 1
-      Script: {instanceID: 0}
-    - Class: 4
-      Script: {instanceID: 0}
-    - Class: 20
-      Script: {instanceID: 0}
-    - Class: 21
-      Script: {instanceID: 0}
-    - Class: 28
-      Script: {instanceID: 0}
-    - Class: 48
-      Script: {instanceID: 0}
-    - Class: 81
-      Script: {instanceID: 0}
-    - Class: 104
-      Script: {instanceID: 0}
-    - Class: 108
-      Script: {instanceID: 0}
-    - Class: 157
-      Script: {instanceID: 0}
-    Assets/Scenes/MainMenu.unity:
-    - Class: 1
-      Script: {instanceID: 0}
-    - Class: 4
-      Script: {instanceID: 0}
-    - Class: 20
-      Script: {instanceID: 0}
-    - Class: 21
-      Script: {instanceID: 0}
-    - Class: 28
-      Script: {instanceID: 0}
-    - Class: 48
-      Script: {instanceID: 0}
-    - Class: 81
-      Script: {instanceID: 0}
-    - Class: 104
-      Script: {instanceID: 0}
-    - Class: 108
-      Script: {instanceID: 0}
-    - Class: 114
-      Script: {instanceID: 9706}
-    - Class: 114
-      Script: {instanceID: 9874}
-    - Class: 114
-      Script: {instanceID: 9922}
-    - Class: 114
-      Script: {instanceID: 10324}
-    - Class: 114
-      Script: {instanceID: 10744}
-    - Class: 114
-      Script: {instanceID: 11244}
-    - Class: 114
-      Script: {instanceID: 11618}
-    - Class: 114
-      Script: {instanceID: 36404}
-    - Class: 115
-      Script: {instanceID: 0}
-    - Class: 128
-      Script: {instanceID: 0}
-    - Class: 157
-      Script: {instanceID: 0}
-    - Class: 213
-      Script: {instanceID: 0}
-    - Class: 222
-      Script: {instanceID: 0}
-    - Class: 223
-      Script: {instanceID: 0}
-    - Class: 224
-      Script: {instanceID: 0}
     Assets/Scenes/MuseumEscapeMain.unity:
     - Class: 1
       Script: {instanceID: 0}
@@ -165,56 +95,70 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 9800}
     - Class: 114
+      Script: {instanceID: 9874}
+    - Class: 114
       Script: {instanceID: 9912}
     - Class: 114
       Script: {instanceID: 9922}
     - Class: 114
       Script: {instanceID: 9986}
     - Class: 114
-      Script: {instanceID: 10066}
+      Script: {instanceID: 10004}
     - Class: 114
-      Script: {instanceID: 10284}
+      Script: {instanceID: 10068}
     - Class: 114
-      Script: {instanceID: 10292}
+      Script: {instanceID: 10286}
     - Class: 114
-      Script: {instanceID: 10324}
+      Script: {instanceID: 10294}
     - Class: 114
-      Script: {instanceID: 10376}
+      Script: {instanceID: 10326}
     - Class: 114
-      Script: {instanceID: 10484}
+      Script: {instanceID: 10378}
     - Class: 114
-      Script: {instanceID: 10522}
+      Script: {instanceID: 10468}
+    - Class: 114
+      Script: {instanceID: 10488}
     - Class: 114
       Script: {instanceID: 10526}
     - Class: 114
-      Script: {instanceID: 10544}
+      Script: {instanceID: 10530}
     - Class: 114
-      Script: {instanceID: 10578}
+      Script: {instanceID: 10548}
     - Class: 114
-      Script: {instanceID: 10626}
+      Script: {instanceID: 10582}
     - Class: 114
-      Script: {instanceID: 11044}
+      Script: {instanceID: 10630}
     - Class: 114
-      Script: {instanceID: 11090}
+      Script: {instanceID: 10748}
     - Class: 114
-      Script: {instanceID: 11226}
+      Script: {instanceID: 11048}
     - Class: 114
-      Script: {instanceID: 11240}
+      Script: {instanceID: 11094}
+    - Class: 114
+      Script: {instanceID: 11230}
     - Class: 114
       Script: {instanceID: 11244}
     - Class: 114
-      Script: {instanceID: 11556}
+      Script: {instanceID: 11248}
     - Class: 114
-      Script: {instanceID: 11588}
+      Script: {instanceID: 11388}
     - Class: 114
-      Script: {instanceID: 11618}
+      Script: {instanceID: 11420}
     - Class: 114
-      Script: {instanceID: 11642}
+      Script: {instanceID: 11564}
     - Class: 114
-      Script: {instanceID: 11648}
+      Script: {instanceID: 11596}
+    - Class: 114
+      Script: {instanceID: 11626}
+    - Class: 114
+      Script: {instanceID: 11650}
+    - Class: 114
+      Script: {instanceID: 11656}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 124
+      Script: {instanceID: 0}
+    - Class: 128
       Script: {instanceID: 0}
     - Class: 135
       Script: {instanceID: 0}
@@ -439,6 +383,12 @@ ScriptsOnlyBuild:
     className: GemInteract
   - hash:
       serializedVersion: 2
+      Hash: 9aa36f4103d0294f324f18082b92bd49
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: GameWin
+  - hash:
+      serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Assembly-CSharp-firstpass.dll
     namespaceName: UnityStandardAssets.Vehicles.Ball
@@ -653,6 +603,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: CameraSwitch
+  - hash:
+      serializedVersion: 2
+      Hash: b9398859cff171e2068196653da8047e
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: StartButton
   - hash:
       serializedVersion: 2
       Hash: 0574135745ea880aa1c1be2f2057ab89
@@ -1165,6 +1121,12 @@ ScriptsOnlyBuild:
     className: GerstnerDisplace
   - hash:
       serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: DoubleDoorInteract
+  - hash:
+      serializedVersion: 2
       Hash: c3d3430df9e3ea95e3e3d587961390fb
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
@@ -1181,6 +1143,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TMP_StyleSheet
+  - hash:
+      serializedVersion: 2
+      Hash: 1097952603da79e5c7ff42d0ecd473c4
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: OpeningLetter
   - hash:
       serializedVersion: 2
       Hash: 698812e8d71fd38ac0f66f7a70a25fb5
@@ -1319,15 +1287,8 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp-firstpass.dll
     namespaceName: UnityStandardAssets.Utility
     className: AutoMobileShaderSwitch
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: GameManager
   platform: 19
   scenePathNames:
-  - Assets/Scenes/MainMenu.unity
   - Assets/Scenes/MuseumEscapeMain.unity
-  - Assets/Scenes/GameEnd.unity
-  playerPath: C:/Users/mhill9/Documents/GitHub/GCD-Escape-room/Build/Museum Escape.exe
+  playerPath: C:/Users/mhill9/Documents/GitHub/GCD-Escape-room/Museum Escape/Build/Museum
+    Escape.exe

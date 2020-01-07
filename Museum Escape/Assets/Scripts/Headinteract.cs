@@ -10,6 +10,7 @@ public class Headinteract : MonoBehaviour
     private GameObject Inv;
     private bool HaveGem = false;
     public GameObject Key;
+    private bool Keyhave = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -29,11 +30,12 @@ public class Headinteract : MonoBehaviour
     void ReactToRaycast()
     {
         HaveGem = Inv.GetComponent<Inventory>().GemGot;
-        if (HaveGem == true)
+        if (HaveGem == true && Keyhave == false)
         {
             GemEye.SetActive(true);
             anim.Play("GemInsert");
             Key.SetActive(true);
+            Keyhave = true;
         }
 
         else
